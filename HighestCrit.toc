@@ -1,7 +1,7 @@
 ## Interface: 11505
 ## Title: Highest Crit
 ## Author: Tuv0x
-## Version: 1.0a
+## Version: 1.1a
 ## Notes: Tracks the highest crit you have dealt, will notify with a sound and animation.
 ## SavedVariables: HighestCritDB
 ## OptionalDeps: Ace3
