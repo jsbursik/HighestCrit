@@ -3,7 +3,9 @@
 ## Author: Tuv0x
 ## Version: 1.0a
 ## Notes: Tracks the highest crit you have dealt, will notify with a sound and animation.
-## SavedVariables: HighestCritSettings
-## SavedVariablesPerCharacter: HighestCritDB
+## SavedVariables: HighestCritDB
+## OptionalDeps: Ace3
+
+embeds.xml
 
 HighestCrit.lua
