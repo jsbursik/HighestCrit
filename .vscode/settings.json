@@ -11,6 +11,6 @@
     "table": "disable",
     "utf8": "disable"
   },
-  "Lua.workspace.library": ["~\\.vscode\\extensions\\ketho.wow-api-0.18.1\\Annotations"],
-  "Lua.diagnostics.globals": ["message", "CombatLog", "HIGH"]
+  "Lua.workspace.library": ["~/.vscode-server/extensions/ketho.wow-api-0.18.1/Annotations"],
+  "Lua.diagnostics.globals": ["message", "CombatLog", "HIGH", "UIParent", "ReloadUI"]
 }
