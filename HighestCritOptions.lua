@@ -1,5 +1,7 @@
 local screenWidth, screenHeight = GetPhysicalScreenSize()
 
+LSM = LibStub("LibSharedMedia-3.0")
+
 HCOptions = {
   name = "HighestCrit",
   handler = HighestCrit,
@@ -26,6 +28,15 @@ HCOptions = {
       isPercent = false,
       set = "SetYPos",
       get = "GetYPos",
+    },
+    font = {
+      name = "Font",
+      desc = "Set the font you would like to use",
+      type = "select",
+      dialogControl = "LSM30_Font",
+      values = LSM:HashTable("font"),
+      get = "getFont",
+      set = "setFont",
     }
   }
 }
@@ -48,4 +59,15 @@ end
 
 function HighestCrit:GetYPos(info)
   return self.YPos
+end
+
+function HighestCrit:setFont(info, value)
+  self.displayFont = LSM:Fetch("font", value)
+  self.db.profile.displayFont = self.displayFont
+  CritText:SetFont(self.displayFont, self.db.profile.displayFontSize, self.db.profile.displayFontStyle)
+  CritFrame:SetSize(CritText:GetStringWidth(), CritText:GetStringHeight())
+end
+
+function HighestCrit:getFont(info)
+  return self.displayFont
 end
