@@ -20,11 +20,12 @@ local playerName, _ = UnitName("player")
 
 function HighestCrit:OnInitialize()
   LibStub("AceConfig-3.0"):RegisterOptionsTable("HighestCrit", HCOptions)
-  self.optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("HighestCrit", "HighestCrit")
+  self.optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("HighestCrit", "Highest Crit")
   self.db = LibStub("AceDB-3.0"):New("HighestCritDB", defaults, true)
   self.db:SetProfile(playerName)
   self.XPos = self.db.profile.XPos
   self.YPos = self.db.profile.YPos
+  self.displayFont = self.db.profile.displayFont
   CritFrame:SetPoint("CENTER", self.db.profile.XPos, self.db.profile.YPos)
   self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
   CritText:SetFont(self.db.profile.displayFont, self.db.profile.displayFontSize, self.db.profile.displayFontStyle)
