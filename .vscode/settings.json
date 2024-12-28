@@ -11,6 +11,33 @@
     "table": "disable",
     "utf8": "disable"
   },
-  "Lua.workspace.library": ["~/.vscode-server/extensions/ketho.wow-api-0.18.1/Annotations"],
-  "Lua.diagnostics.globals": ["message", "CombatLog", "HIGH", "UIParent", "ReloadUI"]
+  "Lua.workspace.library": ["~\\.vscode\\extensions\\ketho.wow-api-0.18.1\\Annotations"],
+  "Lua.diagnostics.globals": [
+    "message",
+    "CombatLog",
+    "HIGH",
+    "UIParent",
+    "ReloadUI",
+    "XP",
+    "APPLY",
+    "ToggleDropDownMenu",
+    "UIDropDownMenu_AddButton",
+    "UIDropDownMenu_CreateInfo",
+    "CLOSE",
+    "BATTLENET_OPTIONS_LABEL",
+    "CloseDropDownMenus",
+    "GetBindingFromClick",
+    "BNet_GetBNetIDAccount",
+    "WorldFrame",
+    "SlashCmdList",
+    "UNKNOWN",
+    "CloseWindows",
+    "LE_PARTY_CATEGORY_INSTANCE",
+    "ChatEdit_GetActiveWindow",
+    "ChatEdit_InsertLink",
+    "ChatFrame_OpenChat",
+    "DEFAULT_CHAT_FRAME",
+    "CLASS_ICON_TCOORDS",
+    "CombatLog_Color_ColorArrayBySchool"
+  ]
 }
