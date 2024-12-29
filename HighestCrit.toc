@@ -10,3 +10,4 @@ embeds.xml
 
 HighestCrit.lua
 HighestCritOptions.lua
+HighestCritAnimations.lua
